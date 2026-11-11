@@ -1,0 +1,16 @@
+{
+  "name": "administrator/php-mvc",
+  "autoload": {
+    "psr-4": {
+      "app\\": "./"
+    }
+  },
+  "authors": [
+    {
+      "name": "traximuser6",
+      "email": "126877156+traximuser6@users.noreply.github.com"
+    }
+  ],
+  "require": {
+  }
+}
