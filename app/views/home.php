@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 <head>
   <title><?= htmlspecialchars($title) ?></title>
 </head>
