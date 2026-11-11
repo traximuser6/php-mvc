@@ -86,7 +86,7 @@ class Router {
     }
 
     public function renderView($view) {
-        include_once __DIR__ . "/../views/$view.php";
+        return include_once __DIR__ . "/../views/$view.php";
     }
 
 }
