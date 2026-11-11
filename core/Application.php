@@ -4,14 +4,16 @@ namespace app\core;
 
 class Application {
 
+    public Request $request;
     public Router $router;
 
     public function __construct() {
-        $this->router = new Router();
+        $this->request = new Request();
+        $this->router = new Router($this->request);
     }
 
     public function run() {
-        // todo : changes here
+        $this->router->resolve();
     }
 
 }

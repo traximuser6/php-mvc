@@ -1,0 +1,44 @@
+<?php
+
+// go one step up and there is composer.json file
+require_once __DIR__ . '/../vendor/autoload.php';
+
+$app = new \app\core\Application();
+
+use app\core\Application;
+
+$app = new Application();
+
+/*
+|--------------------------------------------------------------------------
+| todo: routes
+|--------------------------------------------------------------------------
+*/
+
+$app->router->get('/', function () {
+    return 'hello world';
+});
+
+// this is where we are passing the callback
+$app->router->get('/users', function () {
+    return 'users';
+});
+
+$app->router->get('/contact', 'contact');
+
+/*
+|--------------------------------------------------------------------------
+| todo: run
+|--------------------------------------------------------------------------
+*/
+
+
+
+
+
+$app->run();
+
+
+
+
+
