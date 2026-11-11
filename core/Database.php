@@ -11,7 +11,7 @@ class Database {
     public static function connection(): PDO {
         if (self::$connection === null) {
             self::$connection = new PDO(
-                dsn: 'mysql:host=localhost;dbname=my_mvc;charset=utf8mb4',
+                dsn: 'mysql:host=localhost;dbname=php_mvc;charset=utf8mb4',
                 username: 'root',
                 password: '',
                 options: [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION],
