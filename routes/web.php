@@ -1,4 +1,6 @@
 <?php
 
-$router->get('/', [HomeController::class, 'index']);
-$router->get('/users', [UserController::class, 'index']);
+$router = new \core\Router();
+
+$router->get('/', [\controllers\HomeController::class, 'index']);
+$router->get('/users', [\controllers\UserController::class, 'index']);

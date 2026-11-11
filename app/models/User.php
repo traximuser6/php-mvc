@@ -3,6 +3,7 @@
 namespace models;
 
 use core\Model;
+use PDO;
 
 class User extends Model {
 
