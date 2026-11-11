@@ -15,9 +15,7 @@ $app = new Application();
 |--------------------------------------------------------------------------
 */
 
-$app->router->get('/', function () {
-    return 'hello world';
-});
+$app->router->get('/', 'home');
 
 // this is where we are passing the callback
 $app->router->get('/users', function () {
@@ -31,10 +29,6 @@ $app->router->get('/contact', 'contact');
 | todo: run
 |--------------------------------------------------------------------------
 */
-
-
-
-
 
 $app->run();
 

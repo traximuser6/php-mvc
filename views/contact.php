@@ -1,13 +1,39 @@
-<!doctype html>
-<html lang="en" dir="ltr">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Basic Template</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Aapki Custom CSS yahan likh sakte hain -->
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+  </style>
 </head>
 <body>
-    <h2>Lorem ipsum dolor sit.</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos expedita iste modi natus possimus. Animi, cum facilis placeat repudiandae rerum similique temporibus tenetur! A ab accusantium, aliquam aperiam at atque aut autem beatae corporis debitis deleniti dolore dolorem dolores, ea eos eveniet facere, illo iure iusto magnam magni minima modi mollitia nam nemo nulla officia pariatur placeat quaerat qui quidem quo repellendus similique tenetur ullam voluptatem voluptatum! Assumenda earum error expedita harum, ipsa iste mollitia non quo unde voluptates? Ab accusantium aperiam earum eius eligendi, esse et illo, inventore necessitatibus obcaecati perferendis praesentium quam ratione rem, reprehenderit temporibus ut velit.</p>
+
+<div class="container text-center mt-5">
+  <div class="p-5 mb-4 bg-white rounded-3 shadow-sm">
+    <h1 class="display-5 fw-bold text-primary">Hello, Bootstrap!</h1>
+    <p class="col-md-8 fs-4 mx-auto text-muted">Yeh Bootstrap ki sab se basic aur single-page template hai.</p>
+    <button id="myButton" class="btn btn-dark btn-lg">Click Me</button>
+  </div>
+</div>
+
+<!-- Bootstrap JS Bundle CDN (Popper ke sath) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Aapki Custom JavaScript yahan likh sakte hain -->
+<script>
+  document.getElementById('myButton').addEventListener('click', function() {
+    alert('Bootstrap JavaScript kaam kar rahi hai!');
+  });
+</script>
+
 </body>
 </html>
